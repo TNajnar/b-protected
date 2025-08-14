@@ -1,0 +1,27 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.format.enable": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "workbench.colorCustomizations": {
+    "commandCenter.border": "#003f71",
+    "sash.hoverBorder": "#12294b",
+    "statusBar.background": "#003f71",
+    "statusBar.foreground": "#ffffff",
+    "statusBarItem.hoverBackground": "#12294b",
+    "statusBarItem.remoteBackground": "#1a2f54",
+    "statusBarItem.remoteForeground": "#ffffff",
+    "titleBar.activeBackground": "#1a2f54",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveBackground": "#1a2f5499",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "css.lint.unknownAtRules": "ignore",
+}
