@@ -1,8 +1,11 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http';
-import { provideTranslateService, provideTranslateLoader } from "@ngx-translate/core";
+import { provideTranslateService } from "@ngx-translate/core";
 import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { providePrimeNG } from 'primeng/config';
+import Material from '@primeuix/themes/material';
 
 import { routes } from './app.routes';
 
@@ -16,6 +19,18 @@ export const appConfig: ApplicationConfig = {
         provideTranslateService({
             loader: provideTranslateHttpLoader({ prefix: './i18n/', suffix: '.json' }),
             fallbackLang: 'cs'
+        }),
+
+        // Styles
+        provideAnimationsAsync(),
+        providePrimeNG({
+            theme: {
+                preset: Material,
+                options: {
+                    darkModeSelector: false || 'none'
+                },
+            }
         })
     ],
 };
+
