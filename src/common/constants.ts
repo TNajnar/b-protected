@@ -1,9 +1,14 @@
 export const COMPANY_CONSTANTS = {
-  ADDRESS_VALUE: 'Praha, Česká republika',
-  PHONE_VALUE: '+420 XXX XXX XXX',
-  EMAIL_VALUE: 'info@b-protected.cz',
+  ADDRESS: 'Praha, Česká republika',
+  PHONE: '+420 XXX XXX XXX',
+  EMAIL: 'info@b-protected.cz',
 
-  COMPANY_NAME_VALUE: 'B-Protected Services s.r.o.',
-  DIRECTOR_VALUE: 'Ing. Tomáš Najnar',
-  ICO_VALUE: '123 45 678'
+  COMPANY_NAME: 'B-Protected Services s.r.o.',
+  DIRECTOR: 'Mgr. Krystof Brauner',
+  ICO: '123 45 678',
+
+  FACEBOOK_URL: 'https://www.facebook.com/bprotected',
+  INSTAGRAM_URL: 'https://www.instagram.com/bprotected',
+
+  AUTHOR_WEBSITE_URL: 'https://tomasnajnar.com'
 } as const;

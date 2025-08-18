@@ -13,35 +13,47 @@
 
 			<div class="space-y-6">
 				<div class="flex items-start">
-					<div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
-						<span class="text-white text-sm">📍</span>
+					<div class="w-8 h-8 bg-primary-blue rounded-full flex items-center justify-center mr-4 mt-1">
+						<i [class]="'pi ' + PrimeIcons.MAP_MARKER + ' text-white text-sm'"></i>
 					</div>
 
 					<div>
 						<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.AddressLabel' | translate }}</h4>
-						<p class="text-gray-600">{{ CONSTANTS.ADDRESS_VALUE }}</p>
+						<p class="text-primary-gray">{{ constants.ADDRESS }}</p>
 					</div>
 				</div>
 
 				<div class="flex items-start">
-					<div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
-						<span class="text-white text-sm">📞</span>
+					<div class="w-8 h-8 bg-primary-blue rounded-full flex items-center justify-center mr-4 mt-1">
+						<i [class]="'pi ' + PrimeIcons.PHONE + ' text-white text-sm'"></i>
 					</div>
 
 					<div>
 						<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.PhoneLabel' | translate }}</h4>
-						<p class="text-gray-600">{{ CONSTANTS.PHONE_VALUE }}</p>
+
+                        <ui-link-text
+                            [href]="'tel:' + constants.PHONE"
+                            rel="noopener noreferrer"
+                        >
+                            {{ constants.PHONE }}
+                        </ui-link-text>
 					</div>
 				</div>
 
 				<div class="flex items-start">
-					<div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
-						<span class="text-white text-sm">✉️</span>
+					<div class="w-8 h-8 bg-primary-blue rounded-full flex items-center justify-center mr-4 mt-1">
+						<i [class]="'pi ' + PrimeIcons.ENVELOPE + ' text-white text-sm'"></i>
 					</div>
 
 					<div>
 						<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.EmailLabel' | translate }}</h4>
-						<p class="text-gray-600">{{ CONSTANTS.EMAIL_VALUE }}</p>
+
+                        <ui-link-text
+                            [href]="'mailto:' + constants.EMAIL"
+                            rel="noopener noreferrer"
+                        >
+                            {{ constants.EMAIL }}
+                        </ui-link-text>
 					</div>
 				</div>
 			</div>
@@ -51,19 +63,37 @@
 			<h3 class="text-2xl font-semibold text-gray-900 mb-6">{{ 'APP._Contact.CompanyInfoTitle' | translate }}</h3>
 
 			<div class="space-y-6">
-				<div>
-					<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.CompanyNameLabel' | translate }}</h4>
-					<p class="text-gray-600">{{ CONSTANTS.COMPANY_NAME_VALUE }}</p>
+				<div class="flex items-start">
+					<div class="w-8 h-8 bg-primary-blue rounded-full flex items-center justify-center mr-4 mt-1">
+						<i [class]="'pi ' + PrimeIcons.BUILDING + ' text-white text-sm'"></i>
+					</div>
+
+					<div>
+						<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.CompanyNameLabel' | translate }}</h4>
+						<p class="text-primary-gray">{{ constants.COMPANY_NAME }}</p>
+					</div>
 				</div>
 
-				<div>
-					<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.DirectorLabel' | translate }}</h4>
-					<p class="text-gray-600">{{ CONSTANTS.DIRECTOR_VALUE }}</p>
+				<div class="flex items-start">
+					<div class="w-8 h-8 bg-primary-blue rounded-full flex items-center justify-center mr-4 mt-1">
+						<i [class]="'pi ' + PrimeIcons.USER + ' text-white text-sm'"></i>
+					</div>
+
+					<div>
+						<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.DirectorLabel' | translate }}</h4>
+						<p class="text-primary-gray">{{ constants.DIRECTOR }}</p>
+					</div>
 				</div>
 
-				<div>
-					<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.ICOLabel' | translate }}</h4>
-					<p class="text-gray-600">{{ CONSTANTS.ICO_VALUE }}</p>
+				<div class="flex items-start">
+					<div class="w-8 h-8 bg-primary-blue rounded-full flex items-center justify-center mr-4 mt-1">
+						<i [class]="'pi ' + PrimeIcons.ID_CARD + ' text-white text-sm'"></i>
+					</div>
+
+					<div>
+						<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.ICOLabel' | translate }}</h4>
+						<p class="text-primary-gray">{{ constants.ICO }}</p>
+					</div>
 				</div>
 			</div>
 		</div>

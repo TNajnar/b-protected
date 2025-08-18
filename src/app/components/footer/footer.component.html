@@ -1,8 +1,44 @@
-<footer class="bg-gray-900 text-white py-8">
-    <div class="page-layout">
-        <div class="text-center">
-            <img src="/images/logo-horizontal.png" alt="B-Protected" class="h-8 mx-auto mb-4 filter brightness-0 invert" />
-            <p class="text-gray-400">© 2025 B-Protected. Všechna práva vyhrazena.</p>
-        </div>
-    </div>
+<footer class="bg-gray-900 text-white py-5">
+	<div class="page-layout">
+		<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-4">
+			<div class="flex justify-center md:justify-start">
+				<img src="/svg/logo-horizontal.svg" alt="B-Protected" title="B-Protected" class="w-[200px]">
+			</div>
+
+			<div class="text-center">
+				<p class="text-gray-400 mb-1">{{ 'APP._Footer.Copyright' | translate }}</p>
+
+				<p class="text-gray-500 text-sm">
+					{{ 'APP._Footer.CreatedByPrefix' | translate }}
+
+					<a [href]="constants.AUTHOR_WEBSITE_URL" target="_blank" rel="noopener noreferrer"
+					   class="text-gray-300 hover:text-white transition-colors duration-200 hover:underline">
+						{{ 'APP._Footer.CreatedByName' | translate }}
+					</a>
+				</p>
+			</div>
+
+            <div class="flex items-center justify-center md:justify-end gap-4">
+				<a
+					class="text-gray-400 hover:text-white transition-colors duration-200"
+					[href]="constants.FACEBOOK_URL"
+					target="_blank"
+					rel="noopener noreferrer"
+					title="Facebook"
+				>
+					<i [class]="'pi ' + PrimeIcons.FACEBOOK" style="font-size: 2rem;"></i>
+				</a>
+
+				<a
+					class="text-gray-400 hover:text-white transition-colors duration-200"
+					[href]="constants.INSTAGRAM_URL"
+					target="_blank"
+					rel="noopener noreferrer"
+					title="Instagram"
+				>
+					<i [class]="'pi ' + PrimeIcons.INSTAGRAM" style="font-size: 2rem;"></i>
+				</a>
+			</div>
+		</div>
+	</div>
 </footer>

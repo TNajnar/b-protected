@@ -15,6 +15,12 @@
             "ICOLabel": "IČO"
         },
 
+        "_Footer": {
+            "Copyright": "© 2025 B-Protected. Všechna práva vyhrazena.",
+            "CreatedByPrefix": "Webové stránky vytvořil",
+            "CreatedByName": "Tomáš Najnar"
+        },
+
         "_OurServices": {
             "Title": "Naše služby",
 
