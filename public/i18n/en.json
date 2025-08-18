@@ -2,6 +2,11 @@
     "APP": {
         "Title": "B-Protected",
 
+        "_Banner": {
+            "LearnMoreButton": "Learn More",
+            "ContactButton": "Contact Us"
+        },
+
         "_Contact": {
             "Title": "Contact",
             "Description": "Contact us for a free consultation and quote",

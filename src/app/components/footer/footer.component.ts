@@ -13,4 +13,15 @@ import { COMPANY_CONSTANTS } from '@common/constants';
 export class FooterComponent {
     readonly PrimeIcons = PrimeIcons;
     protected readonly constants = COMPANY_CONSTANTS;
+
+    scrollToTop() {
+        const homeElement = document.getElementById('home');
+
+        if (homeElement) {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    }
 }

@@ -2,7 +2,13 @@
 	<div class="page-layout">
 		<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-4">
 			<div class="flex justify-center md:justify-start">
-				<img src="/svg/logo-horizontal.svg" alt="B-Protected" title="B-Protected" class="w-[200px]">
+				<img
+					src="/svg/logo-horizontal.svg"
+					alt="B-Protected"
+					title="B-Protected"
+					class="w-[200px] cursor-pointer hover:opacity-80 transition-opacity duration-200"
+					(click)="scrollToTop()"
+				>
 			</div>
 
 			<div class="text-center">

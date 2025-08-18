@@ -1,13 +1,24 @@
-<section id="home" class="bg-gradient-to-r from-blue-50 to-indigo-50">
+<section id="home" class="bg-gradient-to-r from-blue-50 to-indigo-50 py-20">
     <div class="page-layout flex flex-col items-center gap-12">
         <div class="flex-1">
-            <img src="/svg/logo-vertical.svg" alt="Bezpečnost" class="w-full max-w-md mx-auto" />
+            <img src="/svg/logo-vertical.svg" alt="B-Protected" class="w-full max-w-sm mx-auto" />
         </div>
 
         <div class="flex gap-4">
-            <p-button class="custom-primary-button" label="Zjistit více" size="large" />
+            <p-button
+                class="custom-primary-button"
+                [label]="'APP._Banner.LearnMoreButton' | translate"
+                size="large"
+                [style]="{ 'width': '160px' }"
+                (onClick)="scrollToAbout()"
+            />
 
-            <p-button label="Kontaktovat" size="large" />
+            <p-button
+                [label]="'APP._Banner.ContactButton' | translate"
+                size="large"
+                [style]="{ 'width': '160px' }"
+                (onClick)="scrollToContact()"
+            />
         </div>
     </div>
 </section>

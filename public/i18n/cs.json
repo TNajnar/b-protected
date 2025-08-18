@@ -2,6 +2,11 @@
     "APP": {
         "Title": "B-Protected",
 
+        "_Banner": {
+            "LearnMoreButton": "Zjistit více",
+            "ContactButton": "Kontaktovat"
+        },
+
         "_Contact": {
             "Title": "Kontakt",
             "Description": "Ozvěte se nám pro nezávaznou konzultaci a cenovou nabídku",
