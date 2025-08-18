@@ -1,5 +1,37 @@
 {
     "APP": {
-        "Title": "B-Protected"
+        "Title": "B-Protected",
+
+        "_OurServices": {
+            "Title": "Our Services",
+
+            "_CrisisManagement": {
+                "Title": "Crisis Management",
+                "Description": "We specialize in comprehensive crisis management. Our teams are trained for rapid response to emergencies, coordination of evacuations, and ensuring business continuity during a crisis.",
+                "BulletPoint1": "Risk prevention and identification",
+                "BulletPoint2": "Crisis scenario planning",
+                "BulletPoint3": "Emergency services coordination",
+                "BulletPoint4": "Employee crisis training",
+                "BulletPoint5": "Business continuity assurance"
+            },
+            "_SoftTargetProtection": {
+                "Title": "Soft Target Protection",
+                "Description": "We provide protection for soft targets such as shopping malls, schools, hospitals, and public events. Our services include preventive measures, monitoring, and rapid response to potential threats.",
+                "BulletPoint1": "Security risk assessment of facilities",
+                "BulletPoint2": "Security measures design",
+                "BulletPoint3": "Security systems installation",
+                "BulletPoint4": "Staff security training",
+                "BulletPoint5": "Monitoring and effectiveness evaluation"
+            },
+            "_FireProtection": {
+                "Title": "Fire Protection",
+                "Description": "We offer comprehensive fire protection services, including the installation and maintenance of fire systems, staff training, and the development of evacuation plans. We ensure compliance with all safety standards and regulations.",
+                "BulletPoint1": "Fire alarm system installation",
+                "BulletPoint2": "Fire extinguisher maintenance",
+                "BulletPoint3": "Evacuation plan development",
+                "BulletPoint4": "Fire protection training",
+                "BulletPoint5": "Fire regulation compliance control"
+            }
+        }
     }
 }

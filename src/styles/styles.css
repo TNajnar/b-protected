@@ -2,3 +2,52 @@
 
 @import "tailwindcss";
 @import "./custom-styles.css";
+@import "./components.css";
+
+@layer base {
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        min-width: 320px;
+        background-color: #FFF;
+        font-size: 16px;
+        font-size: 100%;
+        color: #000;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: transparent;
+        scroll-behavior: smooth;
+    }
+
+    html, body, .mat-typography {
+        font-size: 16px; /* Adjust this size as needed */
+        font-family: Arial, sans-serif;
+    }
+
+    /* Fix for Tailwind v4 button reset */
+    button {
+        cursor: pointer;
+    }
+
+    button:focus-visible {
+        outline: 2px solid #0066ff;
+        outline-offset: 2px;
+    }
+}
+
+@layer utilities {
+    .page-layout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+
+        @media (min-width: 1224px) {
+            max-width: 1224px;
+        }
+    }
+}

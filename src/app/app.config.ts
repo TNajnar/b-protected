@@ -5,9 +5,19 @@ import { provideTranslateService } from "@ngx-translate/core";
 import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { providePrimeNG } from 'primeng/config';
+import { definePreset } from '@primeuix/themes';
 import Material from '@primeuix/themes/material';
 
 import { routes } from './app.routes';
+
+const MyPreset = definePreset(Material, {
+    semantic: {
+        primary: {
+            button: "#003f71",
+            buttonHover: "#002b52"
+        }
+    }
+});
 
 export const appConfig: ApplicationConfig = {
     providers: [
@@ -25,7 +35,7 @@ export const appConfig: ApplicationConfig = {
         provideAnimationsAsync(),
         providePrimeNG({
             theme: {
-                preset: Material,
+                preset: MyPreset,
                 options: {
                     darkModeSelector: false || 'none'
                 },

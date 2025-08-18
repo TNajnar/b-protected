@@ -1,5 +1,44 @@
 {
     "APP": {
-        "Title": "B-Protected"
+        "Title": "B-Protected",
+
+        "_OurServices": {
+            "Title": "Naše služby",
+
+            "_CrisisManagement": {
+                "Title": "Krizové řízení",
+                "Description": "Krizové řízení pomáhá organizacím být připravené na mimořádné události a krizové situace, minimalizovat jejich dopad na chod organizace a zajistit rychlou a efektivní koordinaci při jejich řešení.",
+                "BulletPoint1": "identifikace a hodnocení možných zdrojů rizik vedoucích k mimořádným událostem a krizovým situacím návrh preventivních bezpečnostních opatření",
+                "BulletPoint2": "návrh preventivních bezpečnostních opatření",
+                "BulletPoint3": "tvorba krizových, evakuačních, traumatologických plánů a další bezpečnostní dokumentace",
+                "BulletPoint4": "příprava a školení krizových týmů, managementu, zaměstnanců i dalších osob",
+                "BulletPoint5": "provádění simulací a praktických cvičení různých krizových scénářů",
+                "BulletPoint6": "spolupráce se složkami IZS",
+                "BulletPoint7": "poskytovaní poradenství při řešení reálných krizových situací"
+            },
+            "_SoftTargetProtection": {
+                "Title": "Ochrana měkkých cílů",
+                "Description": "Ochrana měkkých cílů se zaměřuje na bezpečnost míst s vysokou koncentrací osob a nízkou úrovní fyzické ochrany. Cílem je chránit životy a zdraví lidí, předcházet nežádoucím incidentům a zajistit bezpečné prostředí pro zaměstnance i návštěvníky.",
+                "BulletPoint1": "vyhodnocení ohroženosti měkkého cíle",
+                "BulletPoint2": "návrh preventivních bezpečnostních opatření",
+                "BulletPoint3": "tvorba bezpečnostní a plánovací dokumentace",
+                "BulletPoint4": "školení zaměstnanců a dalších osob v zásadách ochrany měkkých cílů",
+                "BulletPoint5": "provádění simulací a praktických cvičení bezpečnostních scénářů",
+                "BulletPoint6": "spolupráce se složkami IZS",
+                "BulletPoint7": "poskytování poradenství při řešení reálných krizových situací"
+            },
+            "_FireProtection": {
+                "Title": "Ochrana proti požáru",
+                "Description": "Požární ochrana zajišťuje prevenci vzniku požáru, připravenost a koordinaci při jeho řešení, s cílem minimalizovat škody a zajistit bezpečnost osob a majetku.",
+                "BulletPoint1": "zajištění plnění legislativních požadavků v oblasti požární ochrany",
+                "BulletPoint2": "provedení zhodnocení podmínek požární bezpečnosti",
+                "BulletPoint3": "návrh opatření pro prevenci a ochranu před požáry",
+                "BulletPoint4": "tvorba dokumentace požární ochrany dle požadavků legislativy",
+                "BulletPoint5": "školení a odborná příprava zaměstnanců v požární ochraně dle požadavků legislativy",
+                "BulletPoint6": "organizovaní cvičného požárního poplachu",
+                "BulletPoint7": "spolupráce se Státním požárním dozorem a Hasičským záchranným sborem",
+                "BulletPoint8": "poskytování poradenství při řešení reálných požárních událostí"
+            }
+        }
     }
 }

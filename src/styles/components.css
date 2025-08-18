@@ -1,0 +1,24 @@
+/* #region Components */
+
+.custom-primary-button .p-button {
+    @apply bg-secondary-blue border-secondary-blue;
+}
+
+.custom-primary-button .p-button:hover:not(:active):not(:disabled) {
+    @apply bg-teriary-blue border-teriary-blue;
+}
+
+.custom-primary-button .p-button:not(:disabled):active {
+    @apply bg-active-blue border-active-blue;
+}
+
+/* #endregion */
+
+/* #region Global styles */
+
+.section-title {
+    @apply mb-4 text-3xl font-bold text-primary-blue;
+    @apply lg:text-4xl;
+}
+
+/* #endregion */

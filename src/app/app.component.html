@@ -1,7 +1,13 @@
-<h1 class="text-center text-primary-blue text-5xl">
-    {{ title | translate }}
-</h1>
+<app-header />
 
-<p-button label="Check" severity="primary" />
+<main class="flex flex-col gap-20 max-w-full">
+    <app-banner />
+    <app-about />
+    <app-services />
+    <app-pricing />
+    <app-contact />
+</main>
+
+<app-footer />
 
 <router-outlet />

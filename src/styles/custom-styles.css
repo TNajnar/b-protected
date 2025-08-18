@@ -1,3 +1,8 @@
 @theme {
-    --color-primary-blue: #003f71;
+    --color-primary-blue: #003f71; /* Krystofs custom color */
+    --color-secondary-blue: #003f71;  /* Used as button bg */
+    --color-teriary-blue: #004d8a;  /* Used as hover */
+    --color-active-blue: #002b52;  /* Used as active state */
+
+    --color-primary-gray: #757575;
 }
