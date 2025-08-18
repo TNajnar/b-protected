@@ -2,6 +2,19 @@
     "APP": {
         "Title": "B-Protected",
 
+        "_Contact": {
+            "Title": "Contact",
+            "Description": "Contact us for a free consultation and quote",
+            "ContactInfoTitle": "Contact Information",
+            "CompanyInfoTitle": "Company Details",
+            "AddressLabel": "Address",
+            "PhoneLabel": "Phone",
+            "EmailLabel": "Email",
+            "CompanyNameLabel": "Company Name",
+            "DirectorLabel": "Director",
+            "ICOLabel": "Company ID"
+        },
+
         "_OurServices": {
             "Title": "Our Services",
 

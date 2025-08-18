@@ -2,6 +2,19 @@
     "APP": {
         "Title": "B-Protected",
 
+        "_Contact": {
+            "Title": "Kontakt",
+            "Description": "Ozvěte se nám pro nezávaznou konzultaci a cenovou nabídku",
+            "ContactInfoTitle": "Kontaktní informace",
+            "CompanyInfoTitle": "Firemní údaje",
+            "AddressLabel": "Adresa",
+            "PhoneLabel": "Telefon",
+            "EmailLabel": "Email",
+            "CompanyNameLabel": "Název společnosti",
+            "DirectorLabel": "Jednatel",
+            "ICOLabel": "IČO"
+        },
+
         "_OurServices": {
             "Title": "Naše služby",
 

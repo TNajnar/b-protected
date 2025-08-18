@@ -1,50 +1,71 @@
-<section id="contact" class="py-20 bg-white">
-    <div class="page-layout">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Kontakt</h2>
+<section id="contact" class="page-layout pb-20">
+	<div class="mb-5">
+		<h2 class="section-title">{{ 'APP._Contact.Title' | translate }}</h2>
 
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Ozvěte se nám pro nezávaznou konzultaci a cenovou nabídku
-            </p>
-        </div>
+		<p class="text-xl text-primary-gray max-w-3xl">
+			{{ 'APP._Contact.Description' | translate }}
+		</p>
+	</div>
 
-        <div class="grid lg:grid-cols-2 gap-12">
-            <ng-container>
-                <h3 class="text-2xl font-semibold text-gray-900 mb-6">Kontaktní informace</h3>
+	<div class="grid lg:grid-cols-2 gap-12">
+		<div>
+			<h3 class="text-2xl font-semibold text-gray-900 mb-6">{{ 'APP._Contact.ContactInfoTitle' | translate }}</h3>
 
-                <div class="space-y-6">
-                    <div class="flex items-start">
-                        <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
-                            <span class="text-white text-sm">📍</span>
-                        </div>
+			<div class="space-y-6">
+				<div class="flex items-start">
+					<div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+						<span class="text-white text-sm">📍</span>
+					</div>
 
-                        <div>
-                            <h4 class="font-semibold text-gray-900">Adresa</h4>
-                            <p class="text-gray-600">Praha, Česká republika</p>
-                        </div>
-                    </div>
+					<div>
+						<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.AddressLabel' | translate }}</h4>
+						<p class="text-gray-600">{{ CONSTANTS.ADDRESS_VALUE }}</p>
+					</div>
+				</div>
 
-                    <div class="flex items-start">
-                        <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
-                        <span class="text-white text-sm">📞</span>
-                        </div>
-                        <div>
-                        <h4 class="font-semibold text-gray-900">Telefon</h4>
-                        <p class="text-gray-600">+420 XXX XXX XXX</p>
-                        </div>
-                    </div>
+				<div class="flex items-start">
+					<div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+						<span class="text-white text-sm">📞</span>
+					</div>
 
-                    <div class="flex items-start">
-                        <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
-                        <span class="text-white text-sm">✉️</span>
-                        </div>
-                        <div>
-                        <h4 class="font-semibold text-gray-900">Email</h4>
-                        <p class="text-gray-600">info@b-protected.cz</p>
-                        </div>
-                    </div>
-                </div>
-            </ng-container>
-        </div>
-    </div>
+					<div>
+						<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.PhoneLabel' | translate }}</h4>
+						<p class="text-gray-600">{{ CONSTANTS.PHONE_VALUE }}</p>
+					</div>
+				</div>
+
+				<div class="flex items-start">
+					<div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-4 mt-1">
+						<span class="text-white text-sm">✉️</span>
+					</div>
+
+					<div>
+						<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.EmailLabel' | translate }}</h4>
+						<p class="text-gray-600">{{ CONSTANTS.EMAIL_VALUE }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<h3 class="text-2xl font-semibold text-gray-900 mb-6">{{ 'APP._Contact.CompanyInfoTitle' | translate }}</h3>
+
+			<div class="space-y-6">
+				<div>
+					<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.CompanyNameLabel' | translate }}</h4>
+					<p class="text-gray-600">{{ CONSTANTS.COMPANY_NAME_VALUE }}</p>
+				</div>
+
+				<div>
+					<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.DirectorLabel' | translate }}</h4>
+					<p class="text-gray-600">{{ CONSTANTS.DIRECTOR_VALUE }}</p>
+				</div>
+
+				<div>
+					<h4 class="font-semibold text-gray-900">{{ 'APP._Contact.ICOLabel' | translate }}</h4>
+					<p class="text-gray-600">{{ CONSTANTS.ICO_VALUE }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
