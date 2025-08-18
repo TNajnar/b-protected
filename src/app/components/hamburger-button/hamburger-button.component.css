@@ -1,7 +1,9 @@
+@reference "tailwindcss";
+
 .hamburger-button {
     @apply relative;
     @apply p-2 rounded-md text-gray-700 transition-all duration-200;
-    @apply hover:text-primary hover:bg-gray-100;
+    @apply hover:bg-gray-100;
 }
 
 .hamburger-button:focus {

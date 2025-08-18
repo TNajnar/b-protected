@@ -48,6 +48,15 @@
             "CreatedByName": "Tomáš Najnar"
         },
 
+        "_SEO": {
+            "Title": "B-Protected - Krizové řízení, Ochrana měkkých cílů a Požární ochrana",
+            "Description": "B-Protected poskytuje komplexní bezpečnostní řešení - krizové řízení, ochrana měkkých cílů a požární ochrana. Odborné poradenství pro organizace a veřejný sektor.",
+            "Keywords": "krizové řízení, ochrana měkkých cílů, požární ochrana, bezpečnost, krizová připravenost, evakuační plány, bezpečnostní analýzy, IZS, BOZP, Brauner, Kryštof Brauner",
+            "Locale": "cs_CZ",
+            "Language": "Czech",
+            "HtmlLang": "cs"
+        },
+
         "_OurServices": {
             "Title": "Naše služby",
 

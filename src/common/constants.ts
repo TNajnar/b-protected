@@ -4,7 +4,7 @@ export const COMPANY_CONSTANTS = {
   EMAIL: 'info@b-protected.cz',
 
   COMPANY_NAME: 'B-Protected Services s.r.o.',
-  DIRECTOR: 'Mgr. Krystof Brauner',
+  DIRECTOR: 'Mgr. Kryštof Brauner',
   ICO: '123 45 678',
 
   FACEBOOK_URL: 'https://www.facebook.com/bprotected',

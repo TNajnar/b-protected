@@ -1,3 +1,5 @@
+@reference "tailwindcss";
+
 .language-selector {
     @apply relative;
 }

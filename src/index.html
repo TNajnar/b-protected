@@ -1,13 +1,83 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>BProtected</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <!-- Title and description will be set dynamically by Angular -->
+        <title>B-Protected</title>
+        <meta name="description" content="B-Protected - Bezpečnostní řešení">
+
+        <!-- Static meta tags -->
+        <meta name="author" content="B-Protected">
+        <meta name="robots" content="index, follow">
+        <meta name="geo.region" content="CZ">
+        <meta name="geo.placename" content="Česká republika">
+        <meta name="theme-color" content="#3b82f6">
+
+    <!-- Open Graph / Facebook - will be updated dynamically -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://b-protected.cz/">
+    <meta property="og:image" content="https://b-protected.cz/svg/logo-horizontal-black.svg">
+
+    <!-- Twitter - will be updated dynamically -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://b-protected.cz/">
+    <meta property="twitter:image" content="https://b-protected.cz/svg/logo-horizontal-black.svg">        <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="canonical" href="https://b-protected.cz/">
+        <link rel="manifest" href="manifest.json">
+
+        <!-- Structured Data - Organization -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "B-Protected",
+            "url": "https://b-protected.cz",
+            "logo": "https://b-protected.cz/svg/logo-horizontal-black.svg",
+            "description": "Poskytujeme komplexní bezpečnostní řešení v oblasti krizového řízení, ochrany měkkých cílů a požární ochrany.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "CZ"
+            },
+            "sameAs": [
+                "https://www.facebook.com/b-protected",
+                "https://www.instagram.com/b-protected"
+            ],
+            "services": [
+                "Krizové řízení",
+                "Ochrana měkkých cílů",
+                "Požární ochrana",
+                "Bezpečnostní analýzy",
+                "Evakuační plány",
+                "Školení zaměstnanců"
+            ]
+        }
+        </script>
+
+        <!-- Structured Data - Services -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Krizové řízení a Bezpečnostní služby",
+            "provider": {
+                "@type": "Organization",
+                "name": "B-Protected",
+                "url": "https://b-protected.cz"
+            },
+            "description": "Komplexní bezpečnostní služby včetně krizového řízení, ochrany měkkých cílů a požární ochrany",
+            "areaServed": "CZ",
+            "serviceType": [
+                "Krizové řízení",
+                "Ochrana měkkých cílů",
+                "Požární ochrana"
+            ]
+        }
+        </script>
+    </head>
+
+    <body>
+        <app-root></app-root>
+    </body>
 </html>

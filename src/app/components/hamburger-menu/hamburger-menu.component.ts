@@ -23,9 +23,9 @@ export class HamburgerMenuComponent {
 
         if (!document?.body) {
             return;
-        };
+        }
 
-        document.body.classList[this._isMenuOpen() ? 'add' : 'remove']('scroll-locked');
+        document.documentElement.classList[this._isMenuOpen() ? 'add' : 'remove']('scroll-locked');
     }
 
     protected _closeMenu(): void {
@@ -33,9 +33,9 @@ export class HamburgerMenuComponent {
 
         if (!document?.body) {
             return;
-        };
+        }
 
-        document.body.classList.remove('scroll-locked');
+        document.documentElement.classList.remove('scroll-locked');
     }
 
     protected _scrollToSection(sectionId: string): void {

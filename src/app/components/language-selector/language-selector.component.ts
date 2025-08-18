@@ -49,7 +49,7 @@ export class LanguageSelectorComponent {
     });
 
     constructor() {
-        this._currentLang.set(this.translateService.getCurrentLang() || 'cs');
+        this._currentLang.set(this.translateService.currentLang || 'cs');
     }
 
     protected _toggleMenu(event: Event): void {

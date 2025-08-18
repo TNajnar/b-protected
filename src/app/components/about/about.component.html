@@ -1,23 +1,23 @@
-<section [id]="SectionId.ABOUT" class="page-layout">
-    <div class="mb-5">
-        <h2 class="section-title">{{ 'APP._About.Title' | translate }}</h2>
+<section [id]="SectionId.ABOUT" class="page-layout" itemscope itemtype="https://schema.org/AboutPage">
+    <header class="mb-5">
+        <h2 class="section-title" itemprop="name">{{ 'APP._About.Title' | translate }}</h2>
 
-        <p class="text-xl text-primary-gray">
+        <p class="text-xl text-primary-gray" itemprop="description">
             {{ 'APP._About.Subtitle' | translate }}
         </p>
-    </div>
+    </header>
 
-    <div class="flex flex-col gap-4">
-        <p>
+    <article class="flex flex-col gap-4" itemprop="mainContentOfPage">
+        <p itemprop="text">
             {{ 'APP._About.Paragraph1' | translate }}
         </p>
 
-        <p>
+        <p itemprop="text">
             {{ 'APP._About.Paragraph2' | translate }}
         </p>
 
-        <p>
+        <p itemprop="text">
             {{ 'APP._About.Paragraph3' | translate }}
         </p>
-    </div>
+    </article>
 </section>

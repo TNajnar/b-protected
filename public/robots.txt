@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://b-protected.cz/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Block access to certain directories if needed
+# Disallow: /admin/
+# Disallow: /private/
