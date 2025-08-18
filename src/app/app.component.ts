@@ -11,15 +11,15 @@ import { PricingComponent } from "./components/pricing/pricing.component";
 @Component({
     selector: 'app-root',
     imports: [
-    RouterOutlet,
-    AboutComponent,
-    ServicesComponent,
-    ContactComponent,
-    HeaderComponent,
-    BannerComponent,
-    FooterComponent,
-    PricingComponent
-],
+        RouterOutlet,
+        AboutComponent,
+        ServicesComponent,
+        ContactComponent,
+        HeaderComponent,
+        BannerComponent,
+        FooterComponent,
+        PricingComponent
+    ],
     templateUrl: './app.component.html',
 })
-export class AppComponent {}
+export class AppComponent { }

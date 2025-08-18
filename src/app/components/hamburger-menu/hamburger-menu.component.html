@@ -1,0 +1,76 @@
+<app-hamburger-button
+    [isOpen]="_isMenuOpen()"
+    (toggle)="_toggleMenu()"
+    ariaLabel="Toggle navigation menu"
+/>
+
+@if (_isMenuOpen()) {
+    <div
+        class="fixed inset-0 backdrop-blur-sm bg-opacity-20 z-40"
+        (click)="_closeMenu()"
+    ></div>
+}
+
+<div
+    class="fixed top-0 right-0 h-full w-80 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50"
+    [class.translate-x-0]="_isMenuOpen()"
+    [class.translate-x-full]="!_isMenuOpen()"
+>
+    <div class="flex items-center justify-between p-6 border-b border-gray-200">
+        <img src="/svg/logo-horizontal.svg" alt="B-Protected" class="h-8">
+
+        <button
+            (click)="_closeMenu()"
+            class="p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-100 transition-all duration-200"
+            aria-label="Close menu"
+        >
+            <i [class]="PrimeIcons.TIMES" class="text-xl"></i>
+        </button>
+    </div>
+
+    <nav class="flex flex-col p-6 space-y-4">
+        <a
+            (click)="_scrollToTop()"
+            class="text-lg text-gray-700 hover:text-primary transition-colors duration-200 py-2 border-b border-gray-100 cursor-pointer"
+        >
+            {{ 'APP._Navigation.Home' | translate }}
+        </a>
+
+        <a
+            (click)="_scrollToSection('about')"
+            class="text-lg text-gray-700 hover:text-primary transition-colors duration-200 py-2 border-b border-gray-100 cursor-pointer"
+        >
+            {{ 'APP._Navigation.About' | translate }}
+        </a>
+
+        <a
+            (click)="_scrollToSection('services')"
+            class="text-lg text-gray-700 hover:text-primary transition-colors duration-200 py-2 border-b border-gray-100 cursor-pointer"
+        >
+            {{ 'APP._Navigation.Services' | translate }}
+        </a>
+
+        <a
+            (click)="_scrollToSection('pricing')"
+            class="text-lg text-gray-700 hover:text-primary transition-colors duration-200 py-2 border-b border-gray-100 cursor-pointer"
+        >
+            {{ 'APP._Navigation.Pricing' | translate }}
+        </a>
+
+        <a
+            (click)="_scrollToSection('contact')"
+            class="text-lg text-gray-700 hover:text-primary transition-colors duration-200 py-2 border-b border-gray-100 cursor-pointer"
+        >
+            {{ 'APP._Navigation.Contact' | translate }}
+        </a>
+    </nav>
+
+    <div class="absolute bottom-6 left-6 right-6">
+        <p-button
+            [label]="'APP._Navigation.ContactUs' | translate"
+            class="w-full custom-primary-button"
+            size="large"
+            (onClick)="_scrollToSection('contact')"
+        />
+    </div>
+</div>

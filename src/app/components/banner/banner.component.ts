@@ -2,31 +2,21 @@ import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { TranslatePipe } from '@ngx-translate/core';
 
+import { SectionId } from '@common/enums';
+
 @Component({
     selector: 'app-banner',
     templateUrl: './banner.component.html',
     imports: [ButtonModule, TranslatePipe],
 })
 export class BannerComponent {
-    scrollToContact() {
-        const contactElement = document.getElementById('contact');
+    readonly SectionId = SectionId;
 
-        if (contactElement) {
-            const elementPosition = contactElement.offsetTop;
-            const offsetPosition = elementPosition - 100; // 100px offset for header
+    protected _scrollTo(sectionId: SectionId): void {
+        const targetElement = document.getElementById(sectionId as string);
 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
-    }
-
-    scrollToAbout() {
-        const aboutElement = document.getElementById('about');
-
-        if (aboutElement) {
-            const elementPosition = aboutElement.offsetTop;
+        if (targetElement) {
+            const elementPosition = targetElement.offsetTop;
             const offsetPosition = elementPosition - 100; // 100px offset for header
 
             window.scrollTo({

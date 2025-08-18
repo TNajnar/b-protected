@@ -2,6 +2,28 @@
     "APP": {
         "Title": "B-Protected",
 
+        "_Navigation": {
+            "Home": "Home",
+            "About": "About Us",
+            "Services": "Services",
+            "Pricing": "Pricing",
+            "Contact": "Contact",
+            "ContactUs": "Contact Us"
+        },
+
+        "_About": {
+            "Title": "About Us",
+            "Subtitle": "We create functional and understandable solutions in the field of security and crisis preparedness.",
+            "Paragraph1": "We offer one-time and regular cooperation in the areas of crisis management, soft target protection and fire safety. The establishment of our company is a response to the current growing need to address security topics across society. We provide comprehensive security solutions for organizations and the public sector – from security analyses and proposals for measures, through the preparation of security and planning documentation to the preparation and implementation of practical verification exercises, all in cooperation with integrated rescue system components. In the case of real emergencies and crisis situations, we are available to clients as an expert partner they can turn to immediately.",
+            "Paragraph2": "Our company also cooperates with other experts, thanks to which we are able to offer services in other related areas, such as self-defense, cybersecurity, first aid or occupational health and safety. We build our professional background on university and other specialized education in the areas of security issues and crisis management of the company's founder, which is continuously supplemented by practical experience gained domestically and abroad. The founder has many years of experience in security management in healthcare facilities, which he transfers to broader practice through a newly established brand that offers professional and comprehensibly presented services also for education, social services, public institutions and other organizations.",
+            "Paragraph3": "The goal of our company is to provide simply presented, understandable, and above all effective security solutions that increase the security and crisis preparedness of our clients and contribute to higher preparedness for emergencies and crisis situations."
+        },
+
+        "_Pricing": {
+            "Title": "Pricing",
+            "Description": "Because we strive to tailor our services to the specific conditions of each client, which can vary significantly, it is not possible to provide a unified and generally applicable price list. The price is therefore always determined based on individual agreement with the client."
+        },
+
         "_Banner": {
             "LearnMoreButton": "Learn More",
             "ContactButton": "Contact Us"
@@ -31,30 +53,37 @@
 
             "_CrisisManagement": {
                 "Title": "Crisis Management",
-                "Description": "We specialize in comprehensive crisis management. Our teams are trained for rapid response to emergencies, coordination of evacuations, and ensuring business continuity during a crisis.",
-                "BulletPoint1": "Risk prevention and identification",
-                "BulletPoint2": "Crisis scenario planning",
-                "BulletPoint3": "Emergency services coordination",
-                "BulletPoint4": "Employee crisis training",
-                "BulletPoint5": "Business continuity assurance"
+                "Description": "Crisis management helps organizations be prepared for emergencies and crisis situations, minimize their impact on the organization's operations and ensure rapid and effective coordination in their resolution.",
+                "BulletPoint1": "identification and assessment of possible sources of risks leading to emergencies and crisis situations",
+                "BulletPoint2": "design of preventive security measures",
+                "BulletPoint3": "creation of crisis, evacuation, traumatological plans and other security documentation",
+                "BulletPoint4": "preparation and training of crisis teams, management, employees and other persons",
+                "BulletPoint5": "conducting simulations and practical exercises of various crisis scenarios",
+                "BulletPoint6": "cooperation with integrated rescue system components",
+                "BulletPoint7": "providing consultation in solving real crisis situations"
             },
             "_SoftTargetProtection": {
                 "Title": "Soft Target Protection",
-                "Description": "We provide protection for soft targets such as shopping malls, schools, hospitals, and public events. Our services include preventive measures, monitoring, and rapid response to potential threats.",
-                "BulletPoint1": "Security risk assessment of facilities",
-                "BulletPoint2": "Security measures design",
-                "BulletPoint3": "Security systems installation",
-                "BulletPoint4": "Staff security training",
-                "BulletPoint5": "Monitoring and effectiveness evaluation"
+                "Description": "Soft target protection focuses on the security of places with high concentrations of people and low levels of physical protection. The goal is to protect lives and health of people, prevent unwanted incidents and ensure a safe environment for employees and visitors.",
+                "BulletPoint1": "evaluation of soft target vulnerability",
+                "BulletPoint2": "design of preventive security measures",
+                "BulletPoint3": "creation of security and planning documentation",
+                "BulletPoint4": "training of employees and other persons in soft target protection principles",
+                "BulletPoint5": "conducting simulations and practical exercises of security scenarios",
+                "BulletPoint6": "cooperation with integrated rescue system components",
+                "BulletPoint7": "providing consultation in solving real crisis situations"
             },
             "_FireProtection": {
                 "Title": "Fire Protection",
-                "Description": "We offer comprehensive fire protection services, including the installation and maintenance of fire systems, staff training, and the development of evacuation plans. We ensure compliance with all safety standards and regulations.",
-                "BulletPoint1": "Fire alarm system installation",
-                "BulletPoint2": "Fire extinguisher maintenance",
-                "BulletPoint3": "Evacuation plan development",
-                "BulletPoint4": "Fire protection training",
-                "BulletPoint5": "Fire regulation compliance control"
+                "Description": "Fire protection ensures fire prevention, preparedness and coordination in its resolution, with the aim of minimizing damage and ensuring the safety of people and property.",
+                "BulletPoint1": "ensuring compliance with legislative requirements in the field of fire protection",
+                "BulletPoint2": "conducting evaluation of fire safety conditions",
+                "BulletPoint3": "design of measures for fire prevention and protection",
+                "BulletPoint4": "creation of fire protection documentation according to legislative requirements",
+                "BulletPoint5": "training and professional preparation of employees in fire protection according to legislative requirements",
+                "BulletPoint6": "organizing fire drill exercises",
+                "BulletPoint7": "cooperation with State Fire Supervision and Fire Rescue Service",
+                "BulletPoint8": "providing consultation in solving real fire incidents"
             }
         }
     }

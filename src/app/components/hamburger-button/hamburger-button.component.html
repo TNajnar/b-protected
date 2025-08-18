@@ -1,0 +1,14 @@
+<button
+    (click)="_onToggle()"
+    class="hamburger-button"
+    [attr.aria-expanded]="isOpen()"
+    [attr.aria-label]="ariaLabel()"
+>
+    @if (!isOpen()) {
+        <i [class]="PrimeIcons.BARS" style="font-size: 1.5rem;"></i>
+    }
+
+    @if (isOpen()) {
+        <i [class]="PrimeIcons.TIMES" style="font-size: 1.5rem;"></i>
+    }
+</button>

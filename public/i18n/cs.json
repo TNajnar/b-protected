@@ -2,6 +2,28 @@
     "APP": {
         "Title": "B-Protected",
 
+        "_Navigation": {
+            "Home": "Domů",
+            "About": "O nás",
+            "Services": "Služby",
+            "Pricing": "Ceník",
+            "Contact": "Kontakt",
+            "ContactUs": "Kontaktujte nás"
+        },
+
+        "_About": {
+            "Title": "O nás",
+            "Subtitle": "Vytváříme funkční a srozumitelná řešení v oblasti bezpečnosti a krizové připravenosti.",
+            "Paragraph1": "Nabízíme jednorázovou i pravidelnou spolupráci v oblastech krizového řízení, ochrany měkkých cílů a požární ochrany. Vznik naší společnosti je reakcí na aktuální rostoucí potřebu řešit bezpečnostní témata napříč celou společností. Poskytujeme komplexní bezpečnostní řešení pro organizace a veřejný sektor – od provedení bezpečnostních analýz a návrhů opatření, přes zpracování bezpečnostní a plánovací dokumentace až po přípravu a realizaci praktických prověřovacích cvičení, a to vše i ve spolupráci se složkami integrovaného záchranného systému. V případě reálných mimořádných událostí a krizových situací jsme klientům k dispozici jako odborný partner, na kterého se mohou okamžitě obrátit.",
+            "Paragraph2": "Naše společnost spolupracuje také s dalšími odborníky, díky čemuž jsme schopni nabídnout služby v dalších souvisejících oblastech, jako je sebeobrana, kybernetická bezpečnost, první pomoc či BOZP. Odborné zázemí stavíme na vysokoškolském i dalším specializovaném vzdělání v oblastech bezpečnostní problematiky a krizového řízení zakladatele společnosti, které je průběžně doplňováno o praktické zkušenosti získávané v tuzemsku i v zahraničí. Zakladatel má mnoholeté zkušenosti s řízením bezpečnosti ve zdravotnických zařízeních, které přenáší do širší praxe prostřednictvím nově založené značky, jež nabízí profesionální a srozumitelně podané služby také pro školství, sociální služby, veřejné instituce a další organizace.",
+            "Paragraph3": "Cílem naší společnosti je poskytovat jednoduše podaná, srozumitelná, a především účinná bezpečnostní řešení, která zvyšují bezpečnost a krizovou připravenost našich klientů a přispívají k vyšší připravenosti na mimořádné události a krizové situace."
+        },
+
+        "_Pricing": {
+            "Title": "Ceník",
+            "Description": "Protože se snažíme naše služby maximálně přizpůsobit konkrétním podmínkám každého klienta, které se mohou výrazně lišit, není možné uvést jednotný a obecně platný ceník. Cena je proto vždy stanovena na základě individuální dohody s klientem."
+        },
+
         "_Banner": {
             "LearnMoreButton": "Zjistit více",
             "ContactButton": "Kontaktovat"

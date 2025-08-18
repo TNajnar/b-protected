@@ -1,0 +1,32 @@
+<p-button
+    [attr.aria-label]="'Select language - Current: ' + _currentLanguage().name"
+    [text]="true"
+    (onClick)="_toggleMenu($event)"
+>
+    <img
+        [src]="_currentLanguage().flag"
+        [alt]="_currentLanguage().name"
+        class="w-6 h-4 object-cover shadow-sm"
+        style="border-radius: 0;"
+    >
+</p-button>
+
+<p-menu
+    #menu
+    [model]="_menuItems()"
+    [popup]="true"
+    appendTo="body"
+>
+    <ng-template pTemplate="item" let-item>
+        <button class="flex items-center p-2 w-full">
+            <img
+                [src]="item.data.flag"
+                [alt]="item.label"
+                class="w-4 h-3 object-cover shadow-sm mr-3"
+                style="border-radius: 0;"
+            >
+
+            <span class="font-medium text-sm">{{ item.label }}</span>
+        </button>
+    </ng-template>
+</p-menu>

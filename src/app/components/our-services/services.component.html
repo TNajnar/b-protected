@@ -1,13 +1,13 @@
 <section id="services" class="py-12 md:py-16 lg:py-20 bg-gray-50">
     <div class="page-layout">
         <div class="flex flex-col gap-2 mb-5">
-            <h2 class="section-title text-center md:text-left">{{ _title | translate }}</h2>
+            <h2 class="section-title text-center xl:text-left">{{ _title | translate }}</h2>
 
-            <div class="w-full flex flex-col sm:flex-row sm:items-center sm:justify-center md:justify-start gap-2 sm:gap-4">
+            <div class="w-full flex flex-col lg:flex-row lg:items-center xl:justify-start gap-2 sm:gap-4">
                 @for (tabTitle of tabTitles(); track tabTitle.id; let isLast = $last) {
                     <button
                         [class]="
-                            'text-xl sm:text-2xl md:text-3xl border-b-2 transition-colors duration-200 hover:text-primary-blue py-2 sm:py-1 text-center sm:text-left '
+                            'text-xl sm:text-2xl lg:text-3xl border-b-2 transition-colors duration-200 hover:text-primary-blue py-2 sm:py-1 text-center sm:text-left '
                             + (
                                 _activeTab() === tabTitle.variant
                                     ? 'text-primary-blue border-b-2 border-primary-blue'
@@ -20,7 +20,7 @@
                     </button>
 
                     @if (!isLast) {
-                        <span class="hidden sm:inline text-xl sm:text-2xl md:text-3xl text-primary-gray">|</span>
+                        <span class="hidden lg:inline text-xl sm:text-2xl md:text-3xl text-primary-gray">|</span>
                     }
                 }
             </div>
@@ -34,7 +34,7 @@
             </div>
         -->
 
-        <p-card class="h-[400px]">
+        <p-card class="2xl:h-[400px]">
             <p class="text-base md:text-lg text-gray-700 text-justify mb-4">
                 {{ activeTabContent() | translate }}
             </p>

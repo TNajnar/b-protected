@@ -1,0 +1,22 @@
+.hamburger-button {
+    @apply relative;
+    @apply p-2 rounded-md text-gray-700 transition-all duration-200;
+    @apply hover:text-primary hover:bg-gray-100;
+}
+
+.hamburger-button:focus {
+    @apply outline-none;
+    box-shadow: 0 0 0 2px var(--primary-color, #3b82f6), 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.hamburger-button i {
+    @apply transition-all duration-200 ease-in-out inline-block;
+}
+
+.hamburger-button:hover i {
+    @apply scale-105;
+}
+
+.hamburger-button:active i {
+    @apply scale-95;
+}

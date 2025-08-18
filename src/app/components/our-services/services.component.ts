@@ -7,9 +7,9 @@ import { TranslatePipe } from "@ngx-translate/core";
 const TRANSLATION_NS = "APP._OurServices" as const;
 
 enum TabVariant {
-    CrisisManagement = "Crisis Management",
-    SoftTargetProtection = "Soft Target Protection",
-    FireProtection = "Fire Protection",
+    CrisisManagement = "CRISIS_MANAGEMENT",
+    SoftTargetProtection = "SOFT_TARGET_PROTECTION",
+    FireProtection = "FIRE_PROTECTION",
 }
 
 interface Tab {

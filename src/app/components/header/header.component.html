@@ -2,20 +2,38 @@
     <div class="page-layout">
         <nav class="flex items-center justify-between py-4">
             <div class="flex items-center">
-                <img src="/images/logo-horizontal.png" alt="B-Protected" class="h-10">
+                <a [href]="'#' + SectionId.HOME" class="block">
+                    <img
+                        class="h-10 cursor-pointer hover:brightness-90 transition-all duration-200"
+                        src="/svg/logo-horizontal.svg"
+                        alt="B-Protected"
+                        [title]="'B-Protected'"
+                    >
+                </a>
             </div>
 
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#home" class="text-gray-700 hover:text-primary transition-colors">Domů</a>
-                <a href="#about" class="text-gray-700 hover:text-primary transition-colors">O nás</a>
-                <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Služby</a>
-                <a href="#pricing" class="text-gray-700 hover:text-primary transition-colors">Ceník</a>
-                <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Kontakt</a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a [href]="'#' + SectionId.HOME" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">{{ 'APP._Navigation.Home' | translate }}</a>
+                <a [href]="'#' + SectionId.ABOUT" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">{{ 'APP._Navigation.About' | translate }}</a>
+                <a [href]="'#' + SectionId.SERVICES" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">{{ 'APP._Navigation.Services' | translate }}</a>
+                <a [href]="'#' + SectionId.PRICING" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">{{ 'APP._Navigation.Pricing' | translate }}</a>
+                <a [href]="'#' + SectionId.CONTACT" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">{{ 'APP._Navigation.Contact' | translate }}</a>
             </div>
 
-            <div class="custom-primary-button">
-                <p-button label="Kontaktujte nás" size="small"></p-button>
+            <div class="flex items-center space-x-4">
+                <app-language-selector />
+
+                <div class="custom-primary-button hidden lg:block" style="width: 130px;">
+                    <p-button
+                        [label]="'APP._Navigation.ContactUs' | translate"
+                        size="small"
+                        [style]="{ width: '100%' }"
+                        (onClick)="_scrollToContact()"
+                    />
+                </div>
+
+                <app-hamburger-menu />
             </div>
         </nav>
     </div>
- </header>
+</header>

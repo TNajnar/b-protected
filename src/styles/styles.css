@@ -11,13 +11,14 @@
     body {
         padding: 0;
         margin: 0;
-        min-width: 320px;
+        min-width: 0;
         background-color: #FFF;
         font-size: 16px;
         font-size: 100%;
         color: #000;
         -webkit-font-smoothing: antialiased;
         -webkit-tap-highlight-color: transparent;
+        overflow-x: hidden;
         scroll-behavior: smooth;
     }
 
@@ -51,5 +52,10 @@
         @media (min-width: 1224px) {
             max-width: 1224px;
         }
+    }
+
+    /* Utility class to prevent body scroll when menu is open */
+    .scroll-locked {
+        overflow: hidden;
     }
 }

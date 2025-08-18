@@ -1,0 +1,55 @@
+.language-selector {
+    @apply relative;
+}
+
+/* Flag Button Styles */
+:host ::ng-deep .flag-button .p-button {
+    @apply p-2 rounded-xs transition-all duration-200 bg-transparent border border-transparent;
+}
+
+:host ::ng-deep .flag-button .p-button:hover {
+    @apply bg-gray-100;
+    border-color: var(--primary-color, #3b82f6);
+}
+
+:host ::ng-deep .flag-button .p-button:focus {
+    @apply outline-none;
+    box-shadow: 0 0 0 2px var(--primary-color, #3b82f6), 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+:host ::ng-deep .language-menu {
+    @apply min-w-[120px];
+}
+
+/* Make sure menu overlay has higher z-index than header */
+:host ::ng-deep .p-menu-overlay {
+    z-index: 9999 !important;
+}
+
+:host ::ng-deep .language-menu .p-menuitem-link {
+    @apply flex items-center px-4 py-3;
+}
+
+:host ::ng-deep .language-menu .p-menuitem-text {
+    @apply ml-2 font-medium;
+}
+
+:host ::ng-deep .language-menu .p-menuitem-link:hover {
+    @apply bg-gray-50;
+    color: var(--primary-color, #3b82f6);
+}
+
+:host ::ng-deep .language-menu img {
+    @apply w-4 h-3 object-cover shadow-sm;
+    border-radius: 0;
+}
+
+@media (max-width: 768px) {
+    :host ::ng-deep .flag-button .p-button {
+        @apply p-1.5;
+    }
+
+    :host ::ng-deep .language-menu {
+        @apply min-w-[100px];
+    }
+}

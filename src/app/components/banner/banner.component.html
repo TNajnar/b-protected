@@ -1,23 +1,28 @@
-<section id="home" class="bg-gradient-to-r from-blue-50 to-indigo-50 py-20">
-    <div class="page-layout flex flex-col items-center gap-12">
-        <div class="flex-1">
-            <img src="/svg/logo-vertical.svg" alt="B-Protected" class="w-full max-w-sm mx-auto" />
+<section [id]="SectionId.HOME" class="bg-gradient-to-r from-blue-50 to-indigo-50 py-12 md:py-16 lg:py-20">
+    <div class="page-layout flex flex-col items-center gap-8 md:gap-10 lg:gap-12">
+        <div class="flex-1 w-full">
+            <img
+                src="/svg/logo-vertical.svg"
+                alt="B-Protected"
+                class="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] mx-auto"
+            />
         </div>
 
-        <div class="flex gap-4">
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:max-w-md mx-auto justify-center">
             <p-button
-                class="custom-primary-button"
+                class="custom-primary-button sm:flex-1"
                 [label]="'APP._Banner.LearnMoreButton' | translate"
-                size="large"
-                [style]="{ 'width': '160px' }"
-                (onClick)="scrollToAbout()"
+                [size]="'small'"
+                [style]="{ 'width': '100%' }"
+                (onClick)="_scrollTo(SectionId.ABOUT)"
             />
 
             <p-button
+                class="sm:flex-1"
                 [label]="'APP._Banner.ContactButton' | translate"
-                size="large"
-                [style]="{ 'width': '160px' }"
-                (onClick)="scrollToContact()"
+                [size]="'small'"
+                [style]="{ 'width': '100%' }"
+                (onClick)="_scrollTo(SectionId.CONTACT)"
             />
         </div>
     </div>

@@ -3,6 +3,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { PrimeIcons } from 'primeng/api';
 
 import { COMPANY_CONSTANTS } from '@common/constants';
+import { SectionId } from '@common/enums';
 
 @Component({
     selector: 'app-footer',
@@ -14,8 +15,8 @@ export class FooterComponent {
     readonly PrimeIcons = PrimeIcons;
     protected readonly constants = COMPANY_CONSTANTS;
 
-    scrollToTop() {
-        const homeElement = document.getElementById('home');
+    protected _scrollToTop(): void {
+        const homeElement = document.getElementById(SectionId.HOME);
 
         if (homeElement) {
             window.scrollTo({
