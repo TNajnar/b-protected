@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { TranslatePipe } from '@ngx-translate/core';
 
@@ -9,7 +10,7 @@ import { SectionId } from '@common/enums';
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
-    imports: [ButtonModule, TranslatePipe, HamburgerMenuComponent, LanguageSelectorComponent],
+    imports: [NgOptimizedImage, ButtonModule, TranslatePipe, HamburgerMenuComponent, LanguageSelectorComponent],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {

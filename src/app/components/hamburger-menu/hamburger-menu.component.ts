@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { ButtonModule } from 'primeng/button';
 import { PrimeIcons } from 'primeng/api';
@@ -7,7 +8,7 @@ import { HamburgerButtonComponent } from '../hamburger-button/hamburger-button.c
 
 @Component({
     selector: 'app-hamburger-menu',
-    imports: [TranslatePipe, ButtonModule, HamburgerButtonComponent],
+    imports: [NgOptimizedImage, TranslatePipe, ButtonModule, HamburgerButtonComponent],
     templateUrl: './hamburger-menu.component.html',
     host: {
         class: 'block lg:hidden'

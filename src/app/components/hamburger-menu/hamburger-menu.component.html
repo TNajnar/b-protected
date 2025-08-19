@@ -17,7 +17,13 @@
     [class.translate-x-full]="!_isMenuOpen()"
 >
     <div class="flex items-center justify-between p-6 border-b border-gray-200">
-        <img src="/svg/logo-horizontal.svg" alt="B-Protected" class="h-8">
+        <img
+            ngSrc="/svg/logo-horizontal.svg"
+            alt="B-Protected"
+            width="96"
+            height="25"
+            class="h-auto w-auto max-h-8"
+        />
 
         <button
             (click)="_closeMenu()"

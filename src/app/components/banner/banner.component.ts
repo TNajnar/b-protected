@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { TranslatePipe } from '@ngx-translate/core';
 
@@ -7,7 +8,7 @@ import { SectionId } from '@common/enums';
 @Component({
     selector: 'app-banner',
     templateUrl: './banner.component.html',
-    imports: [ButtonModule, TranslatePipe],
+    imports: [NgOptimizedImage, ButtonModule, TranslatePipe],
 })
 export class BannerComponent {
     readonly SectionId = SectionId;

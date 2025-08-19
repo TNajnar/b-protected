@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { PrimeIcons } from 'primeng/api';
 
@@ -8,7 +9,7 @@ import { SectionId } from '@common/enums';
 @Component({
     selector: 'app-footer',
     standalone: true,
-    imports: [TranslatePipe],
+    imports: [NgOptimizedImage, TranslatePipe],
     templateUrl: './footer.component.html'
 })
 export class FooterComponent {

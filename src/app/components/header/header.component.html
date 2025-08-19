@@ -4,11 +4,14 @@
             <div class="flex items-center">
                 <a [href]="'#' + SectionId.HOME" class="block">
                     <img
-                        class="h-10 cursor-pointer hover:brightness-90 transition-all duration-200"
-                        src="/svg/logo-horizontal.svg"
+                        ngSrc="/svg/logo-horizontal.svg"
                         alt="B-Protected"
                         [title]="'B-Protected'"
-                    >
+                        width="120"
+                        height="32"
+                        priority
+                        class="h-auto w-auto max-h-10 cursor-pointer hover:brightness-90 transition-all duration-200"
+                    />
                 </a>
             </div>
 
