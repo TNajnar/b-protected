@@ -12,6 +12,11 @@
     font-display: swap;
 }
 
+/* Container query fallback for better CLS */
+* {
+    box-sizing: border-box;
+}
+
 @layer base {
     html,
     body {

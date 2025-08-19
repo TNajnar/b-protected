@@ -27,11 +27,11 @@
         </div>
 
         <p-card class="2xl:h-[400px]">
-            <p class="text-base md:text-lg text-gray-700 text-justify mb-4">
+            <p class="text-base md:text-lg text-primary-gray text-justify mb-4">
                 {{ activeTabContent() | translate }}
             </p>
 
-            <ul class="list-disc list-inside space-y-2 text-base md:text-lg text-gray-700">
+            <ul class="list-disc list-inside space-y-2 text-base md:text-lg text-primary-gray">
                 @for (bulletPoint of activeTabBulletPoints(); track bulletPoint) {
                     <li>{{ bulletPoint | translate }}</li>
                 }

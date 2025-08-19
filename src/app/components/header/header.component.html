@@ -15,12 +15,14 @@
                 </a>
             </div>
 
+            @let itemClass = "text-primary-gray hover:text-blue-600 transition-colors font-medium";
+
             <div class="hidden lg:flex items-center space-x-8">
-                <a [href]="'#' + SectionId.HOME" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">{{ 'APP._Navigation.Home' | translate }}</a>
-                <a [href]="'#' + SectionId.ABOUT" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">{{ 'APP._Navigation.About' | translate }}</a>
-                <a [href]="'#' + SectionId.SERVICES" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">{{ 'APP._Navigation.Services' | translate }}</a>
-                <a [href]="'#' + SectionId.PRICING" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">{{ 'APP._Navigation.Pricing' | translate }}</a>
-                <a [href]="'#' + SectionId.CONTACT" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">{{ 'APP._Navigation.Contact' | translate }}</a>
+                <a [href]="'#' + SectionId.HOME" [ngClass]="itemClass">{{ 'APP._Navigation.Home' | translate }}</a>
+                <a [href]="'#' + SectionId.ABOUT" [ngClass]="itemClass">{{ 'APP._Navigation.About' | translate }}</a>
+                <a [href]="'#' + SectionId.SERVICES" [ngClass]="itemClass">{{ 'APP._Navigation.Services' | translate }}</a>
+                <a [href]="'#' + SectionId.PRICING" [ngClass]="itemClass">{{ 'APP._Navigation.Pricing' | translate }}</a>
+                <a [href]="'#' + SectionId.CONTACT" [ngClass]="itemClass">{{ 'APP._Navigation.Contact' | translate }}</a>
             </div>
 
             <div class="flex items-center space-x-4">

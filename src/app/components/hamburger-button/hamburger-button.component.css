@@ -2,7 +2,7 @@
 
 .hamburger-button {
     @apply relative;
-    @apply p-2 rounded-md text-gray-700 transition-all duration-200;
+    @apply p-2 rounded-md text-[#757575] transition-all duration-200;
     @apply hover:bg-gray-100;
 }
 
