@@ -34,39 +34,26 @@
         </button>
     </div>
 
+    @let navItemClass = "text-lg text-gray-700 hover:text-primary transition-colors duration-200 py-2 border-b border-gray-100 cursor-pointer";
+
     <nav class="flex flex-col p-6 space-y-4">
-        <a
-            (click)="_scrollToTop()"
-            class="text-lg text-gray-700 hover:text-primary transition-colors duration-200 py-2 border-b border-gray-100 cursor-pointer"
-        >
+        <a (click)="_scrollToTop()" [ngClass]="navItemClass">
             {{ 'APP._Navigation.Home' | translate }}
         </a>
 
-        <a
-            (click)="_scrollToSection('about')"
-            class="text-lg text-gray-700 hover:text-primary transition-colors duration-200 py-2 border-b border-gray-100 cursor-pointer"
-        >
+        <a (click)="_scrollToSection('about')" [ngClass]="navItemClass">
             {{ 'APP._Navigation.About' | translate }}
         </a>
 
-        <a
-            (click)="_scrollToSection('services')"
-            class="text-lg text-gray-700 hover:text-primary transition-colors duration-200 py-2 border-b border-gray-100 cursor-pointer"
-        >
+        <a (click)="_scrollToSection('services')" [ngClass]="navItemClass">
             {{ 'APP._Navigation.Services' | translate }}
         </a>
 
-        <a
-            (click)="_scrollToSection('pricing')"
-            class="text-lg text-gray-700 hover:text-primary transition-colors duration-200 py-2 border-b border-gray-100 cursor-pointer"
-        >
+        <a (click)="_scrollToSection('pricing')" [ngClass]="navItemClass">
             {{ 'APP._Navigation.Pricing' | translate }}
         </a>
 
-        <a
-            (click)="_scrollToSection('contact')"
-            class="text-lg text-gray-700 hover:text-primary transition-colors duration-200 py-2 border-b border-gray-100 cursor-pointer"
-        >
+        <a (click)="_scrollToSection('contact')" [ngClass]="navItemClass">
             {{ 'APP._Navigation.Contact' | translate }}
         </a>
     </nav>

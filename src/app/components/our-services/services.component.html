@@ -26,21 +26,13 @@
             </div>
         </div>
 
-        <!-- TODO: Decide wether we want card component
-            <div class="mt-6 md:mt-8 p-4 md:p-6 bg-white rounded-lg shadow-sm">
-                <p class="text-base md:text-lg text-gray-700 text-justify">
-                    {{ activeTabContent() }}
-                </p>
-            </div>
-        -->
-
         <p-card class="2xl:h-[400px]">
             <p class="text-base md:text-lg text-gray-700 text-justify mb-4">
                 {{ activeTabContent() | translate }}
             </p>
 
             <ul class="list-disc list-inside space-y-2 text-base md:text-lg text-gray-700">
-                @for (bulletPoint of activeTabBulletPoints(); track $index) {
+                @for (bulletPoint of activeTabBulletPoints(); track bulletPoint) {
                     <li>{{ bulletPoint | translate }}</li>
                 }
             </ul>
