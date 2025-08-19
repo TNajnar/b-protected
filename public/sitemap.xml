@@ -4,52 +4,52 @@
 
     <!-- Homepage -->
     <url>
-        <loc>https://b-protected.cz/</loc>
+        <loc>https://www.bprotected.cz/</loc>
         <lastmod>2025-01-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="cs" href="https://b-protected.cz/?lang=cs"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://b-protected.cz/?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://www.bprotected.cz/?lang=cs"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bprotected.cz/?lang=en"/>
     </url>
 
     <!-- About section -->
     <url>
-        <loc>https://b-protected.cz/#about</loc>
+        <loc>https://www.bprotected.cz/#about</loc>
         <lastmod>2025-01-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="cs" href="https://b-protected.cz/#about?lang=cs"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://b-protected.cz/#about?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://www.bprotected.cz/#about?lang=cs"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bprotected.cz/#about?lang=en"/>
     </url>
 
     <!-- Services section -->
     <url>
-        <loc>https://b-protected.cz/#services</loc>
+        <loc>https://www.bprotected.cz/#services</loc>
         <lastmod>2025-01-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="cs" href="https://b-protected.cz/#services?lang=cs"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://b-protected.cz/#services?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://www.bprotected.cz/#services?lang=cs"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bprotected.cz/#services?lang=en"/>
     </url>
 
     <!-- Pricing section -->
     <url>
-        <loc>https://b-protected.cz/#pricing</loc>
+        <loc>https://www.bprotected.cz/#pricing</loc>
         <lastmod>2025-01-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="cs" href="https://b-protected.cz/#pricing?lang=cs"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://b-protected.cz/#pricing?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://www.bprotected.cz/#pricing?lang=cs"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bprotected.cz/#pricing?lang=en"/>
     </url>
 
     <!-- Contact section -->
     <url>
-        <loc>https://b-protected.cz/#contact</loc>
+        <loc>https://www.bprotected.cz/#contact</loc>
         <lastmod>2025-01-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="cs" href="https://b-protected.cz/#contact?lang=cs"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://b-protected.cz/#contact?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://www.bprotected.cz/#contact?lang=cs"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bprotected.cz/#contact?lang=en"/>
     </url>
 
 </urlset>

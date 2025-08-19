@@ -1,7 +1,7 @@
 export const COMPANY_CONSTANTS = {
   ADDRESS: 'Praha, Česká republika',
   PHONE: '+420 XXX XXX XXX',
-  EMAIL: 'info@b-protected.cz',
+  EMAIL: 'info@bprotected.cz',
 
   COMPANY_NAME: 'B-Protected Services s.r.o.',
   DIRECTOR: 'Mgr. Kryštof Brauner',

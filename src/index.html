@@ -15,16 +15,27 @@
 
     <!-- Open Graph / Facebook - will be updated dynamically -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://b-protected.cz/">
-    <meta property="og:image" content="https://b-protected.cz/svg/logo-horizontal-black.svg">
+    <meta property="og:url" content="https://www.bprotected.cz/">
+    <meta property="og:image" content="https://www.bprotected.cz/svg/logo-horizontal-black.svg">
 
     <!-- Twitter - will be updated dynamically -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://b-protected.cz/">
-    <meta property="twitter:image" content="https://b-protected.cz/svg/logo-horizontal-black.svg">        <base href="/">
+    <meta property="twitter:url" content="https://www.bprotected.cz/">
+    <meta property="twitter:image" content="https://www.bprotected.cz/svg/logo-horizontal-black.svg">        <base href="/">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link rel="canonical" href="https://b-protected.cz/">
+
+        <!-- Preload critical resources -->
+        <link rel="preload" href="fonts/TTSupermolotNeue-ExpXBold.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="svg/logo-horizontal.svg" as="image" type="image/svg+xml">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="svg/logo-vertical.svg">
+        <link rel="icon" type="image/svg+xml" href="svg/logo-horizontal.svg">
+        <link rel="apple-touch-icon" sizes="180x180" href="svg/logo-vertical.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="svg/logo-vertical.svg">
+        <link rel="icon" type="image/png" sizes="16x16" href="svg/logo-vertical.svg">
+
+        <link rel="canonical" href="https://www.bprotected.cz/">
         <link rel="manifest" href="manifest.json">
 
         <!-- Structured Data - Organization -->
@@ -33,8 +44,8 @@
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "B-Protected",
-            "url": "https://b-protected.cz",
-            "logo": "https://b-protected.cz/svg/logo-horizontal-black.svg",
+            "url": "https://www.bprotected.cz",
+            "logo": "https://www.bprotected.cz/svg/logo-horizontal-black.svg",
             "description": "Poskytujeme komplexní bezpečnostní řešení v oblasti krizového řízení, ochrany měkkých cílů a požární ochrany.",
             "address": {
                 "@type": "PostalAddress",
@@ -64,7 +75,7 @@
             "provider": {
                 "@type": "Organization",
                 "name": "B-Protected",
-                "url": "https://b-protected.cz"
+                "url": "https://www.bprotected.cz"
             },
             "description": "Komplexní bezpečnostní služby včetně krizového řízení, ochrany měkkých cílů a požární ochrany",
             "areaServed": "CZ",

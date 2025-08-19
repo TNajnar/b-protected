@@ -1,10 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import "tailwindcss";
 @import "primeicons/primeicons.css";
 
 @import "./custom-styles.css";
 @import "./components.css";
+
+@font-face {
+    font-family: 'TTSupermolotNeue';
+    src: url('/fonts/TTSupermolotNeue-ExpXBold.ttf') format('truetype');
+    font-weight: 800; /* Extra Bold */
+    font-style: normal;
+    font-display: swap;
+}
 
 @layer base {
     html,
@@ -25,6 +31,19 @@
     html, body, .mat-typography {
         font-size: 16px; /* Adjust this size as needed */
         font-family: Arial, sans-serif;
+    }
+
+    /* Heading Styles with Custom Font */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'TTSupermolotNeue';
+        font-weight: 800;
+        line-height: 1.2;
+    }
+
+    /* Utility class for custom font */
+    .font-heading {
+        font-family: 'TTSupermolotNeue';
+        font-weight: 800;
     }
 
     /* Fix for Tailwind v4 button reset */

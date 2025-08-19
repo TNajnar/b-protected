@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { TranslatePipe } from '@ngx-translate/core';
 
@@ -10,6 +10,7 @@ import { SectionId } from '@common/enums';
     selector: 'app-header',
     templateUrl: './header.component.html',
     imports: [ButtonModule, TranslatePipe, HamburgerMenuComponent, LanguageSelectorComponent],
+    changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
     protected readonly SectionId = SectionId;

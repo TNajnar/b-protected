@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://b-protected.cz/sitemap.xml
+Sitemap: https://www.bprotected.cz/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1

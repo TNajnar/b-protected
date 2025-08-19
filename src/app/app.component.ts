@@ -94,7 +94,7 @@ export class AppComponent implements OnInit {
         this._metaService.updateTag({ property: 'twitter:description', content: description });
 
         // Update canonical URL with language parameter
-        const canonicalUrl = `https://b-protected.cz/?lang=${currentLang}`;
+        const canonicalUrl = `https://www.bprotected.cz/?lang=${currentLang}`;
         this._metaService.updateTag({ name: 'canonical', content: canonicalUrl });
 
         // Update alternate language links
@@ -112,19 +112,19 @@ export class AppComponent implements OnInit {
             const csLink = this._document.createElement('link');
             csLink.rel = 'alternate';
             csLink.hreflang = 'cs';
-            csLink.href = 'https://b-protected.cz/?lang=cs';
+            csLink.href = 'https://www.bprotected.cz/?lang=cs';
             head.appendChild(csLink);
 
             const enLink = this._document.createElement('link');
             enLink.rel = 'alternate';
             enLink.hreflang = 'en';
-            enLink.href = 'https://b-protected.cz/?lang=en';
+            enLink.href = 'https://www.bprotected.cz/?lang=en';
             head.appendChild(enLink);
 
             const xDefaultLink = this._document.createElement('link');
             xDefaultLink.rel = 'alternate';
             xDefaultLink.hreflang = 'x-default';
-            xDefaultLink.href = 'https://b-protected.cz/?lang=cs';
+            xDefaultLink.href = 'https://www.bprotected.cz/?lang=cs';
             head.appendChild(xDefaultLink);
         }
     }
