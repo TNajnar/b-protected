@@ -1,11 +1,13 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, inject } from '@angular/core';
 import { NgClass, NgOptimizedImage } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { TranslatePipe } from '@ngx-translate/core';
 
+import { ScrollService } from 'services/scroll.service';
 import { HamburgerMenuComponent } from '../hamburger-menu/hamburger-menu.component';
 import { LanguageSelectorComponent } from '../language-selector/language-selector.component';
 import { SectionId } from '@common/enums';
+import { NAVIGATION_ITEMS } from '@common/constants';
 
 @Component({
     selector: 'app-header',
@@ -14,19 +16,8 @@ import { SectionId } from '@common/enums';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeaderComponent {
+    protected readonly NAVIGATION_ITEMS = NAVIGATION_ITEMS;
     protected readonly SectionId = SectionId;
 
-    protected _scrollToContact(): void {
-        const contactElement = document.getElementById(SectionId.CONTACT);
-
-        if (contactElement) {
-            const elementPosition = contactElement.offsetTop;
-            const offsetPosition = elementPosition - 100; // 100px offset for header
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
-    }
+    protected _scrollService = inject(ScrollService);
 }

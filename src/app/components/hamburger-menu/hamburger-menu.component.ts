@@ -1,10 +1,12 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
 import { NgClass, NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { ButtonModule } from 'primeng/button';
 import { PrimeIcons } from 'primeng/api';
 
+import { ScrollService } from 'services/scroll.service';
 import { HamburgerButtonComponent } from '../hamburger-button/hamburger-button.component';
+import { NAVIGATION_ITEMS } from '@common/constants';
 
 @Component({
     selector: 'app-hamburger-menu',
@@ -12,12 +14,15 @@ import { HamburgerButtonComponent } from '../hamburger-button/hamburger-button.c
     templateUrl: './hamburger-menu.component.html',
     host: {
         class: 'block lg:hidden'
-    }
+    },
 })
 export class HamburgerMenuComponent {
     readonly PrimeIcons = PrimeIcons;
+    protected readonly NAVIGATION_ITEMS = NAVIGATION_ITEMS;
 
     protected _isMenuOpen = signal(false);
+
+    private _scrollService = inject(ScrollService);
 
     protected _toggleMenu(): void {
         this._isMenuOpen.set(!this._isMenuOpen());
@@ -39,28 +44,8 @@ export class HamburgerMenuComponent {
         document.documentElement.classList.remove('scroll-locked');
     }
 
-    protected _scrollToSection(sectionId: string): void {
-        const element = document.getElementById(sectionId);
-
-        if (element) {
-            const elementPosition = element.offsetTop;
-            const offsetPosition = elementPosition - 100; // 100px offset for header
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
-
-        this._closeMenu();
-    }
-
-    protected _scrollToTop(): void {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-
+    protected _onScroll(sectionId: string): void {
+        this._scrollService.scrollToElement(sectionId);
         this._closeMenu();
     }
 }

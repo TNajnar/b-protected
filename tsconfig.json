@@ -7,7 +7,8 @@
     "paths": {
       "@common/*": ["common/*"],
       "@components/*": ["app/components/*"],
-      "@app/*": ["app/*"]
+      "@app/*": ["app/*"],
+      "@services/*": ["app/services/*"]
     },
     "outDir": "./dist/out-tsc",
     "strict": true,

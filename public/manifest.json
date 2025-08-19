@@ -11,7 +11,7 @@
   "scope": "/",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "svg/logo-horizontal.svg",
       "sizes": "16x16 32x32",
       "type": "image/x-icon"
     },

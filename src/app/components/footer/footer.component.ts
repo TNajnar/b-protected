@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 import { PrimeIcons } from 'primeng/api';
 
+import { ScrollService } from 'services/scroll.service';
 import { COMPANY_CONSTANTS } from '@common/constants';
 import { SectionId } from '@common/enums';
 
@@ -14,16 +15,8 @@ import { SectionId } from '@common/enums';
 })
 export class FooterComponent {
     readonly PrimeIcons = PrimeIcons;
+    protected readonly SectionId = SectionId;
     protected readonly constants = COMPANY_CONSTANTS;
 
-    protected _scrollToTop(): void {
-        const homeElement = document.getElementById(SectionId.HOME);
-
-        if (homeElement) {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    }
+    protected _scrollService = inject(ScrollService);
 }

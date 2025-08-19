@@ -5,14 +5,11 @@
 />
 
 @if (_isMenuOpen()) {
-    <div
-        class="fixed inset-0 backdrop-blur-sm bg-opacity-20 z-40"
-        (click)="_closeMenu()"
-    ></div>
+    <div class="fixed top-0 left-0 right-0 bottom-0 z-[98] h-screen w-screen bg-black/50" (click)="_closeMenu()"></div>
 }
 
 <div
-    class="fixed top-0 right-0 h-full w-80 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50"
+    class="fixed top-0 right-0 z-[99] h-screen w-80 bg-white shadow-lg transform transition-transform duration-300 ease-in-out"
     [class.translate-x-0]="_isMenuOpen()"
     [class.translate-x-full]="!_isMenuOpen()"
 >
@@ -22,6 +19,7 @@
             alt="B-Protected"
             width="96"
             height="25"
+            priority
             class="h-auto w-auto max-h-8"
         />
 
@@ -37,33 +35,13 @@
     @let navItemClass = "text-lg text-primary-gray hover:text-primary transition-colors duration-200 py-2 border-b border-gray-100 cursor-pointer";
 
     <nav class="flex flex-col p-6 space-y-4">
-        <a (click)="_scrollToTop()" [ngClass]="navItemClass">
-            {{ 'APP._Navigation.Home' | translate }}
-        </a>
-
-        <a (click)="_scrollToSection('about')" [ngClass]="navItemClass">
-            {{ 'APP._Navigation.About' | translate }}
-        </a>
-
-        <a (click)="_scrollToSection('services')" [ngClass]="navItemClass">
-            {{ 'APP._Navigation.Services' | translate }}
-        </a>
-
-        <a (click)="_scrollToSection('pricing')" [ngClass]="navItemClass">
-            {{ 'APP._Navigation.Pricing' | translate }}
-        </a>
-
-        <a (click)="_scrollToSection('contact')" [ngClass]="navItemClass">
-            {{ 'APP._Navigation.Contact' | translate }}
-        </a>
+        @for (navItem of NAVIGATION_ITEMS; track navItem.id) {
+            <a
+                [ngClass]="navItemClass"
+                (click)="_onScroll(navItem.id)"
+            >
+                {{ navItem.labelKey | translate }}
+            </a>
+        }
     </nav>
-
-    <div class="absolute bottom-6 left-6 right-6">
-        <p-button
-            [label]="'APP._Navigation.ContactUs' | translate"
-            class="w-full custom-primary-button"
-            size="large"
-            (onClick)="_scrollToSection('contact')"
-        />
-    </div>
 </div>
