@@ -15,8 +15,9 @@
             "Title": "About Us",
             "Subtitle": "We create functional and understandable solutions in the field of security and crisis preparedness.",
             "Paragraph1": "We offer one-time and regular cooperation in the areas of crisis management, soft target protection and fire safety. The establishment of our company is a response to the current growing need to address security topics across society. We provide comprehensive security solutions for organizations and the public sector – from security analyses and proposals for measures, through the preparation of security and planning documentation to the preparation and implementation of practical verification exercises, all in cooperation with integrated rescue system components. In the case of real emergencies and crisis situations, we are available to clients as an expert partner they can turn to immediately.",
-            "Paragraph2": "Our company also cooperates with other experts, thanks to which we are able to offer services in other related areas, such as self-defense, cybersecurity, first aid or occupational health and safety. We build our professional background on university and other specialized education in the areas of security issues and crisis management of the company's founder, which is continuously supplemented by practical experience gained domestically and abroad. The founder has many years of experience in security management in healthcare facilities, which he transfers to broader practice through a newly established brand that offers professional and comprehensibly presented services also for education, social services, public institutions and other organizations.",
-            "Paragraph3": "The goal of our company is to provide simply presented, understandable, and above all effective security solutions that increase the security and crisis preparedness of our clients and contribute to higher preparedness for emergencies and crisis situations."
+            "Paragraph2": "Our company also cooperates with other experts, thanks to which we are able to offer services in other related areas, such as self-defense, cybersecurity, first aid or occupational health and safety.",
+            "Paragraph3": "We build our professional background on university and other specialized education in the areas of security issues and crisis management of the company's founder, which is continuously supplemented by practical experience gained domestically and abroad. The founder has many years of experience in security management in healthcare facilities, which he transfers to broader practice through a newly established brand that offers professional and comprehensibly presented services also for education, social services, public institutions and other organizations.",
+            "Paragraph4": "The goal of our company is to provide simply presented, understandable, and above all effective security solutions that increase the security and crisis preparedness of our clients and contribute to higher preparedness for emergencies and crisis situations."
         },
 
         "_Pricing": {
@@ -43,7 +44,7 @@
         },
 
         "_Footer": {
-            "Copyright": "© 2025 B-Protected. All rights reserved.",
+            "Copyright": "© 2025 B-Protected Services s.r.o. All rights reserved.",
             "CreatedByPrefix": "Website created by",
             "CreatedByName": "Tomáš Najnar"
         },
@@ -69,7 +70,7 @@
                 "BulletPoint4": "preparation and training of crisis teams, management, employees and other persons",
                 "BulletPoint5": "conducting simulations and practical exercises of various crisis scenarios",
                 "BulletPoint6": "cooperation with integrated rescue system components",
-                "BulletPoint7": "providing consultation in solving real crisis situations"
+                "BulletPoint7": "providing consultation in solving real crisis situations and emergencies"
             },
             "_SoftTargetProtection": {
                 "Title": "Soft Target Protection",
@@ -80,7 +81,7 @@
                 "BulletPoint4": "training of employees and other persons in soft target protection principles",
                 "BulletPoint5": "conducting simulations and practical exercises of security scenarios",
                 "BulletPoint6": "cooperation with integrated rescue system components",
-                "BulletPoint7": "providing consultation in solving real crisis situations"
+                "BulletPoint7": "providing consultation in solving security threats"
             },
             "_FireProtection": {
                 "Title": "Fire Protection",

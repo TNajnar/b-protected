@@ -15,8 +15,9 @@
             "Title": "O nás",
             "Subtitle": "Vytváříme funkční a srozumitelná řešení v oblasti bezpečnosti a krizové připravenosti.",
             "Paragraph1": "Nabízíme jednorázovou i pravidelnou spolupráci v oblastech krizového řízení, ochrany měkkých cílů a požární ochrany. Vznik naší společnosti je reakcí na aktuální rostoucí potřebu řešit bezpečnostní témata napříč celou společností. Poskytujeme komplexní bezpečnostní řešení pro organizace a veřejný sektor – od provedení bezpečnostních analýz a návrhů opatření, přes zpracování bezpečnostní a plánovací dokumentace až po přípravu a realizaci praktických prověřovacích cvičení, a to vše i ve spolupráci se složkami integrovaného záchranného systému. V případě reálných mimořádných událostí a krizových situací jsme klientům k dispozici jako odborný partner, na kterého se mohou okamžitě obrátit.",
-            "Paragraph2": "Naše společnost spolupracuje také s dalšími odborníky, díky čemuž jsme schopni nabídnout služby v dalších souvisejících oblastech, jako je sebeobrana, kybernetická bezpečnost, první pomoc či BOZP. Odborné zázemí stavíme na vysokoškolském i dalším specializovaném vzdělání v oblastech bezpečnostní problematiky a krizového řízení zakladatele společnosti, které je průběžně doplňováno o praktické zkušenosti získávané v tuzemsku i v zahraničí. Zakladatel má mnoholeté zkušenosti s řízením bezpečnosti ve zdravotnických zařízeních, které přenáší do širší praxe prostřednictvím nově založené značky, jež nabízí profesionální a srozumitelně podané služby také pro školství, sociální služby, veřejné instituce a další organizace.",
-            "Paragraph3": "Cílem naší společnosti je poskytovat jednoduše podaná, srozumitelná, a především účinná bezpečnostní řešení, která zvyšují bezpečnost a krizovou připravenost našich klientů a přispívají k vyšší připravenosti na mimořádné události a krizové situace."
+            "Paragraph2": "Naše společnost spolupracuje také s dalšími odborníky, díky čemuž jsme schopni nabídnout služby v dalších souvisejících oblastech, jako je sebeobrana, kybernetická bezpečnost, první pomoc či BOZP.",
+            "Paragraph3": "Odborné zázemí stavíme na vysokoškolském i dalším specializovaném vzdělání v oblastech bezpečnostní problematiky a krizového řízení zakladatele společnosti, které je průběžně doplňováno o praktické zkušenosti získávané v tuzemsku i v zahraničí. Zakladatel má mnoholeté zkušenosti s řízením bezpečnosti ve zdravotnických zařízeních, které přenáší do širší praxe prostřednictvím nově založené značky, jež nabízí profesionální a srozumitelně podané služby také pro školství, sociální služby, veřejné instituce a další organizace.",
+            "Paragraph4": "Cílem naší společnosti je poskytovat jednoduše podaná, srozumitelná, a především účinná bezpečnostní řešení, která zvyšují bezpečnost a krizovou připravenost našich klientů a přispívají k vyšší připravenosti na mimořádné události a krizové situace."
         },
 
         "_Pricing": {
@@ -31,7 +32,7 @@
 
         "_Contact": {
             "Title": "Kontakt",
-            "Description": "Ozvěte se nám pro nezávaznou konzultaci a cenovou nabídku",
+            "Description": "Ozvěte se nám pro nezávaznou konzultaci a cenovou nabídku.",
             "ContactInfoTitle": "Kontaktní informace",
             "CompanyInfoTitle": "Firemní údaje",
             "AddressLabel": "Adresa",
@@ -43,7 +44,7 @@
         },
 
         "_Footer": {
-            "Copyright": "© 2025 B-Protected. Všechna práva vyhrazena.",
+            "Copyright": "© 2025 B-Protected Services s.r.o. Všechna práva vyhrazena.",
             "CreatedByPrefix": "Webové stránky vytvořil",
             "CreatedByName": "Tomáš Najnar"
         },
@@ -51,7 +52,7 @@
         "_SEO": {
             "Title": "B-Protected - Krizové řízení, Ochrana měkkých cílů a Požární ochrana",
             "Description": "B-Protected poskytuje komplexní bezpečnostní řešení - krizové řízení, ochrana měkkých cílů a požární ochrana. Odborné poradenství pro organizace a veřejný sektor.",
-            "Keywords": "krizové řízení, ochrana měkkých cílů, požární ochrana, bezpečnost, krizová připravenost, evakuační plány, bezpečnostní analýzy, IZS, BOZP, Brauner, Kryštof Brauner",
+            "Keywords": "krizové řízení, ochrana měkkých cílů, požární ochrana, bezpečnost, krizová připravenost, evakuační plány, bezpečnostní analýzy, IZS, BOZP, Brauner, Kryštof Brauner, aktivní útočník, aktivní střelec, krizové plány",
             "Locale": "cs_CZ",
             "Language": "Czech",
             "HtmlLang": "cs"
@@ -63,13 +64,13 @@
             "_CrisisManagement": {
                 "Title": "Krizové řízení",
                 "Description": "Krizové řízení pomáhá organizacím být připravené na mimořádné události a krizové situace, minimalizovat jejich dopad na chod organizace a zajistit rychlou a efektivní koordinaci při jejich řešení.",
-                "BulletPoint1": "identifikace a hodnocení možných zdrojů rizik vedoucích k mimořádným událostem a krizovým situacím návrh preventivních bezpečnostních opatření",
+                "BulletPoint1": "identifikace a hodnocení možných zdrojů rizik vedoucích k mimořádným událostem a krizovým situacím",
                 "BulletPoint2": "návrh preventivních bezpečnostních opatření",
                 "BulletPoint3": "tvorba krizových, evakuačních, traumatologických plánů a další bezpečnostní dokumentace",
                 "BulletPoint4": "příprava a školení krizových týmů, managementu, zaměstnanců i dalších osob",
                 "BulletPoint5": "provádění simulací a praktických cvičení různých krizových scénářů",
                 "BulletPoint6": "spolupráce se složkami IZS",
-                "BulletPoint7": "poskytovaní poradenství při řešení reálných krizových situací"
+                "BulletPoint7": "poskytovaní poradenství při řešení reálných krizových situací a mimořádných událostí"
             },
             "_SoftTargetProtection": {
                 "Title": "Ochrana měkkých cílů",
@@ -80,10 +81,10 @@
                 "BulletPoint4": "školení zaměstnanců a dalších osob v zásadách ochrany měkkých cílů",
                 "BulletPoint5": "provádění simulací a praktických cvičení bezpečnostních scénářů",
                 "BulletPoint6": "spolupráce se složkami IZS",
-                "BulletPoint7": "poskytování poradenství při řešení reálných krizových situací"
+                "BulletPoint7": "poskytování poradenství při řešení konkrétních bezpečnostních hrozeb"
             },
             "_FireProtection": {
-                "Title": "Ochrana proti požáru",
+                "Title": "Požární ochrana",
                 "Description": "Požární ochrana zajišťuje prevenci vzniku požáru, připravenost a koordinaci při jeho řešení, s cílem minimalizovat škody a zajistit bezpečnost osob a majetku.",
                 "BulletPoint1": "zajištění plnění legislativních požadavků v oblasti požární ochrany",
                 "BulletPoint2": "provedení zhodnocení podmínek požární bezpečnosti",

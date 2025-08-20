@@ -8,10 +8,10 @@ export const COMPANY_CONSTANTS = {
 
     COMPANY_NAME: 'B-Protected Services s.r.o.',
     DIRECTOR: 'Mgr. et Mgr. Kryštof Brauner, MBA',
-    ICO: '123 45 678',
+    ICO: '22125574',
 
-    FACEBOOK_URL: 'https://www.facebook.com',
-    INSTAGRAM_URL: 'https://www.instagram.com',
+    FACEBOOK_URL: 'https://www.facebook.com/profile.php?id=61573880346154',
+    INSTAGRAM_URL: 'https://www.instagram.com/b_protected_services',
 
     AUTHOR_WEBSITE_URL: 'https://tomasnajnar.com',
 } as const;
