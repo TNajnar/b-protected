@@ -14,14 +14,16 @@
     [class.translate-x-full]="!_isMenuOpen()"
 >
     <div class="flex items-center justify-between p-6 border-b border-gray-200">
-        <img
-            ngSrc="/svg/logo-horizontal.svg"
-            alt="B-Protected"
-            width="96"
-            height="25"
-            priority
-            class="h-auto w-auto max-h-8"
-        />
+        <a [href]="'#' + SectionId.HOME" class="w-[96px] h-[25px]" (click)="_closeMenu()">
+            <img
+                ngSrc="/svg/logo-horizontal.svg"
+                alt="B-Protected"
+                width="96"
+                height="25"
+                priority
+                class="h-auto w-auto max-h-8"
+            />
+        </a>
 
         <button
             (click)="_closeMenu()"

@@ -7,6 +7,7 @@ import { PrimeIcons } from 'primeng/api';
 import { ScrollService } from 'services/scroll.service';
 import { HamburgerButtonComponent } from '../hamburger-button/hamburger-button.component';
 import { NAVIGATION_ITEMS } from '@common/constants';
+import { SectionId } from '@common/enums';
 
 @Component({
     selector: 'app-hamburger-menu',
@@ -18,6 +19,7 @@ import { NAVIGATION_ITEMS } from '@common/constants';
 })
 export class HamburgerMenuComponent {
     readonly PrimeIcons = PrimeIcons;
+    readonly SectionId = SectionId;
     protected readonly NAVIGATION_ITEMS = NAVIGATION_ITEMS;
 
     protected _isMenuOpen = signal(false);
@@ -44,7 +46,7 @@ export class HamburgerMenuComponent {
         document.documentElement.classList.remove('scroll-locked');
     }
 
-    protected _onScroll(sectionId: string): void {
+    protected _onScroll(sectionId: SectionId): void {
         this._scrollService.scrollToElement(sectionId);
         this._closeMenu();
     }
